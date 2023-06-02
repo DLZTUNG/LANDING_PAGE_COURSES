@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1ebfc1;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+
+/* common */
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 68px;
+  color: #ffffff;
+  background: var(--main-color);
+  border-radius: 14px;
+}
+
+/* header */
+.header {
+  padding-top: 52px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  margin-left: auto;
+  margin-right: 150px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul a {
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  color: #2f3a3b;
+}
+
+.nav-bar ul a:hover {
+  font-weight: 600;
+}
+
+.sign-in {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #494949;
+}
+
+.sign-in:hover {
+  font-weight: 600;
+}
+
+.sign-up {
+  margin-left: 24px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--main-color);
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  transition: all ease 0.3s;
+}
+
+.sign-up:hover {
+  color: #fff;
+  background: var(--main-color);
+}
+
+/* hero */
+.hero {
+  margin-top: 50px;
+}
+
+.hero .body {
+  display: flex;
+  gap: 71px;
+}
+
+.hero .info-block {
+  padding: 93px 0;
+  max-width: 458px;
+}
+
+.hero .slogan {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.hero .info-block .title {
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.16;
+  color: #0d1111;
+}
+
+.hero .desc {
+  max-width: 374px;
+  margin-top: 46px;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #9da6a5;
+}
+
+.hero-cta {
+  margin-top: 52px;
+  display: flex;
+  gap: 50px;
+}
+.hero .watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
+
+.hero .img-block {
+  position: relative;
+  width: 641px;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0;
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+
+.hero .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0d1111;
+  background: #fefefd;
+  border-radius: 24px;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+}
+
+.courses.card {
+  left: 25px;
+  top: 149px;
+  gap: 16px;
+  padding: 18px 25px;
+}
+
+.courses.card .courses-img {
+  position: relative;
+  height: 40px;
+}
+
+.courses.card .decorate {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+  width: 28px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.courses.card .title {
+  max-width: 55px;
+}
+
+.schedules.card {
+  flex-direction: column;
+  padding: 16px 25px 23px;
+  bottom: 46px;
+}
+
+.schedules.card .line {
+  width: 74px;
+  height: 6px;
+  background: #edf1f5;
+  border-radius: 3px;
+}
+
+.schedules.card .chart {
+  margin-top: 16px;
+}
+
+.schedules.card .line .level {
+  background: #fb9899;
+  border-radius: 3px;
+}
+
+.schedules.card .line:nth-child(1) .level {
+  width: 39px;
+  height: 6px;
+}
+
+.schedules.card .line:nth-child(2) .level {
+  width: 51px;
+  height: 6px;
+}
+
+.schedules.card .line:nth-child(3) .level {
+  width: 33px;
+  height: 6px;
+}
+
+.schedules.card .line + .line {
+  margin-top: 12px;
+}
+
+.schedules.card .decorate {
+  margin-top: 16px;
+  width: 26px;
+  height: 6px;
+}
+
+.students.card {
+  display: block;
+  right: 45px;
+  bottom: 41px;
+  padding: 17px 35px;
+}
+
+.students.card .avatar-group {
+  display: flex;
+  margin-top: 8px;
+}
+
+.students.card .avatar {
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.students.card .avatar + .avatar {
+  margin-left: -7px;
+}
+
+.students.card .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -7px;
+  width: 33px;
+  height: 33px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #1ebfc1;
+}
